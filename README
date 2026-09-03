@@ -1,33 +1,25 @@
-# 🧠 Learning Python — PLN
+Projeto desenvolvido para estudar **Processamento de Linguagem Natural (PLN)** utilizando Python e a biblioteca NLTK.
 
-Projeto desenvolvido para estudar **Processamento de Linguagem Natural (PLN)** utilizando Python e a biblioteca **NLTK**.
+O projeto explora, de forma prática, como um computador pode analisar textos e identificar sentimentos, além de demonstrar uma etapa básica de PLN através da tokenização.
 
-O projeto explora, de forma prática, como um computador pode analisar textos e identificar sentimentos, além de demonstrar uma etapa básica de PLN através da **tokenização**.
-
----
-
-## 📌 Sobre o projeto
-
+Sobre o projeto
 O objetivo deste projeto é compreender os conceitos básicos de **Processamento de Linguagem Natural** por meio de experimentos simples em Python.
-
 Foram desenvolvidas duas abordagens para classificação de sentimentos:
 
-- 🔹 **Com tokenização:** o texto é dividido em tokens antes da análise.
-- 🔹 **Sem tokenização explícita:** o texto é enviado diretamente para o analisador de sentimentos.
+- 🔹 Com tokenização: o texto é dividido em tokens antes da análise.
+- 🔹 Sem tokenização explícita: o texto é enviado diretamente para o analisador de sentimentos.
 
 A comparação entre as duas abordagens permite observar a diferença entre uma etapa de PLN realizada explicitamente pelo programa e o processamento realizado internamente por uma biblioteca.
 
----
 
-## 🛠️ Tecnologias utilizadas
+Tecnologias utilizadas
 
-- 🐍 **Python**
-- 📚 **NLTK (Natural Language Toolkit)**
-- 💭 **VADER Sentiment Analysis**
+-  Python
+-  NLTK (Natural Language Toolkit)
+-  VADER Sentiment Analysis
 
----
 
-## 🔎 Conceitos estudados
+Conceitos estudados
 
 Durante o desenvolvimento foram trabalhados conceitos como:
 
@@ -46,9 +38,9 @@ Durante o desenvolvimento foram trabalhados conceitos como:
 
 ---
 
-## ⚙️ Como funciona
+Como funciona
 
-### 1. Entrada
+1. Entrada
 
 O usuário digita uma frase no terminal.
 
@@ -56,7 +48,7 @@ O usuário digita uma frase no terminal.
 Digite uma frase: This movie is excellent!
 ```
 
-### 2. Tokenização
+2. Tokenização
 
 Na versão com tokenização, a frase é dividida em unidades menores:
 
@@ -64,9 +56,9 @@ Na versão com tokenização, a frase é dividida em unidades menores:
 This | movie | is | excellent | !
 ```
 
-Essas unidades são chamadas de **tokens**.
+Essas unidades são chamadas de tokens.
 
-### 3. Análise de sentimento
+3. Análise de sentimento
 
 O VADER analisa a frase e retorna diferentes pontuações:
 
@@ -79,7 +71,7 @@ compound
 
 O valor utilizado para determinar a classificação final é o `compound`.
 
-### 4. Classificação
+4. Classificação
 
 A classificação utilizada no projeto é:
 
@@ -89,11 +81,9 @@ A classificação utilizada no projeto é:
 | `<= -0.05` | 🔴 Negativo |
 | Entre os valores | ⚪ Neutro |
 
----
+Exemplos
 
-## 🧪 Exemplos
-
-### Sentimento positivo
+Sentimento positivo
 
 ```text
 This movie is excellent!
@@ -105,7 +95,7 @@ Resultado esperado:
 Sentimento: POSITIVO
 ```
 
-### Sentimento negativo
+Sentimento negativo
 
 ```text
 This movie is terrible.
@@ -117,7 +107,7 @@ Resultado esperado:
 Sentimento: NEGATIVO
 ```
 
-### Negação
+Negação
 
 ```text
 This is not a good movie.
@@ -125,7 +115,7 @@ This is not a good movie.
 
 Esse tipo de frase demonstra uma dificuldade comum da análise de sentimentos: uma palavra isoladamente positiva pode assumir outro significado quando aparece junto de uma negação.
 
-### Sarcasmo
+Sarcasmo
 
 ```text
 Awesome, another parking ticket. Just what I need!
@@ -135,7 +125,7 @@ Esse exemplo demonstra como o sarcasmo pode dificultar a interpretação automá
 
 ---
 
-## 🇧🇷 Observação sobre português
+🇧🇷 Observação sobre português
 
 O VADER foi desenvolvido principalmente para análise de textos em **inglês**.
 
@@ -143,59 +133,15 @@ Por isso, embora o programa consiga receber textos em português, sua análise n
 
 Esse é um dos pontos observados durante o projeto e representa uma das limitações da abordagem utilizada.
 
----
-
-## 📂 Estrutura do projeto
-
-```text
-LearningPython-PLN/
-│
-├── 📁 ...
-├── 📄 README.md
-└── 📄 ...
-```
-
-> A estrutura pode variar conforme os experimentos adicionados ao projeto.
-
----
-
-## 🎯 Objetivos de aprendizagem
-
-Este projeto foi desenvolvido com o objetivo de:
-
-- compreender os conceitos básicos de PLN;
-- entender o funcionamento da tokenização;
-- utilizar uma biblioteca de PLN em Python;
-- experimentar análise automática de sentimentos;
-- comparar diferentes formas de processamento;
-- identificar limitações de classificadores baseados em léxico.
-
----
-
-## 🚀 Possíveis melhorias
-
-Como próximos passos, o projeto pode evoluir para:
-
-- suporte melhor para português;
-- criação de um classificador próprio;
-- utilização de conjuntos de dados para treinamento;
-- comparação entre diferentes métodos de análise;
-- tratamento de frases mais complexas;
-- desenvolvimento de uma interface gráfica ou web.
-
----
-
 ## 📚 Referências
 
 - [NLTK — Natural Language Toolkit](https://www.nltk.org/)
 - [NLTK — Sample usage for sentiment](https://www.nltk.org/howto/sentiment.html)
 - [NLTK — SentimentIntensityAnalyzer](https://www.nltk.org/api/nltk.sentiment.SentimentIntensityAnalyzer.html)
+- [MEDIUM - Introdução a Processamento de Linguagem Natual(https://medium.com/turing-talks/introdu%C3%A7%C3%A3o-ao-processamento-de-linguagem-natural-com-baco-exu-do-blues-17cbb7404258)
+ Autor
 
----
-
-## 👨‍💻 Autor
-
-**Eduardo Ribeiro**
+Eduardo Ribeiro
 
 Projeto desenvolvido para estudos de **Python e Processamento de Linguagem Natural (PLN)**.
 
